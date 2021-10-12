@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E5DAB71AB5182C8C4426D26 /* Pods_HalykProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5394AD18FD913E1CAAE32F /* Pods_HalykProject.framework */; };
+		AF145A552705B56300344B8B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF145A542705B56300344B8B /* Coordinator.swift */; };
+		AF57255E2701DC74004EF64F /* pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = AF57255D2701DC74004EF64F /* pokemon.json */; };
+		AF720B872704C3080057817F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF720B862704C3080057817F /* APIService.swift */; };
+		AF74FD34270D8EB700F1F72B /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74FD33270D8EB700F1F72B /* DataLoader.swift */; };
+		AF74FD3B270DB00000F1F72B /* FirstCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74FD3A270DB00000F1F72B /* FirstCoordinator.swift */; };
+		AF74FD3D270DB69100F1F72B /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74FD3C270DB69100F1F72B /* SecondCoordinator.swift */; };
+		AF74FD3F270E987900F1F72B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF74FD3E270E987900F1F72B /* DetailViewModel.swift */; };
+		AF8B25862700B13B004FB41B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B25852700B13B004FB41B /* AppDelegate.swift */; };
+		AF8B258A2700B13B004FB41B /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B25892700B13B004FB41B /* PokemonViewController.swift */; };
+		AF8B258F2700B13F004FB41B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8B258E2700B13F004FB41B /* Assets.xcassets */; };
+		AF8B25922700B13F004FB41B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8B25902700B13F004FB41B /* LaunchScreen.storyboard */; };
+		AF8B259E2700B3A1004FB41B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B259D2700B3A1004FB41B /* DetailViewController.swift */; };
+		AF8B25A02700C26D004FB41B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B259F2700C26D004FB41B /* Pokemon.swift */; };
+		AF8B25A22700C311004FB41B /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B25A12700C311004FB41B /* PokemonTableViewCell.swift */; };
+		AF8B25A52700D834004FB41B /* PokemonsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B25A42700D834004FB41B /* PokemonsAPI.swift */; };
+		AFFB3AD4270322D00091D81D /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFB3AD3270322D00091D81D /* PokemonViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4BEB3E1E0BA3E32E8E9A412B /* Pods-HalykProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalykProject.debug.xcconfig"; path = "Target Support Files/Pods-HalykProject/Pods-HalykProject.debug.xcconfig"; sourceTree = "<group>"; };
+		54D3C0E360A8EADD2CF017C4 /* Pods-HalykProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalykProject.release.xcconfig"; path = "Target Support Files/Pods-HalykProject/Pods-HalykProject.release.xcconfig"; sourceTree = "<group>"; };
+		AF145A542705B56300344B8B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AF57255D2701DC74004EF64F /* pokemon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pokemon.json; sourceTree = "<group>"; };
+		AF720B862704C3080057817F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		AF74FD33270D8EB700F1F72B /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		AF74FD3A270DB00000F1F72B /* FirstCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCoordinator.swift; sourceTree = "<group>"; };
+		AF74FD3C270DB69100F1F72B /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		AF74FD3E270E987900F1F72B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		AF8B25822700B13B004FB41B /* HalykProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalykProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF8B25852700B13B004FB41B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF8B25892700B13B004FB41B /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		AF8B258E2700B13F004FB41B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF8B25912700B13F004FB41B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF8B25932700B13F004FB41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF8B259D2700B3A1004FB41B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AF8B259F2700C26D004FB41B /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		AF8B25A12700C311004FB41B /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		AF8B25A42700D834004FB41B /* PokemonsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsAPI.swift; sourceTree = "<group>"; };
+		AFFB3AD3270322D00091D81D /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		FE5394AD18FD913E1CAAE32F /* Pods_HalykProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalykProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF8B257F2700B13B004FB41B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E5DAB71AB5182C8C4426D26 /* Pods_HalykProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8B15F52A8C6BA19E13FC51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE5394AD18FD913E1CAAE32F /* Pods_HalykProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF145A582705BD2F00344B8B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				AF145A542705B56300344B8B /* Coordinator.swift */,
+				AF74FD3A270DB00000F1F72B /* FirstCoordinator.swift */,
+				AF74FD3C270DB69100F1F72B /* SecondCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AF74FD35270D92F400F1F72B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AF74FD37270D931800F1F72B /* Details */,
+				AF74FD36270D931300F1F72B /* List */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AF74FD36270D931300F1F72B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				AF74FD38270D935C00F1F72B /* Controller */,
+				AF74FD39270D936D00F1F72B /* View Model */,
+				AF8B25A12700C311004FB41B /* PokemonTableViewCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		AF74FD37270D931800F1F72B /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B259D2700B3A1004FB41B /* DetailViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		AF74FD38270D935C00F1F72B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B25892700B13B004FB41B /* PokemonViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF74FD39270D936D00F1F72B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFFB3AD3270322D00091D81D /* PokemonViewModel.swift */,
+				AF74FD3E270E987900F1F72B /* DetailViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AF8B25792700B13B004FB41B = {
+			isa = PBXGroup;
+			children = (
+				AF8B25842700B13B004FB41B /* HalykProject */,
+				AF8B25832700B13B004FB41B /* Products */,
+				D828C33514217A0FF0A75BAB /* Pods */,
+				3F8B15F52A8C6BA19E13FC51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF8B25832700B13B004FB41B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B25822700B13B004FB41B /* HalykProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF8B25842700B13B004FB41B /* HalykProject */ = {
+			isa = PBXGroup;
+			children = (
+				AF74FD35270D92F400F1F72B /* Scenes */,
+				AF8B25A32700D81F004FB41B /* Network */,
+				AF8B259C2700B36E004FB41B /* API Service */,
+				AF8B259B2700B364004FB41B /* Model */,
+				AF145A582705BD2F00344B8B /* Coordinators */,
+				AF8B25852700B13B004FB41B /* AppDelegate.swift */,
+				AF8B258E2700B13F004FB41B /* Assets.xcassets */,
+				AF8B25902700B13F004FB41B /* LaunchScreen.storyboard */,
+				AF8B25932700B13F004FB41B /* Info.plist */,
+				AF57255D2701DC74004EF64F /* pokemon.json */,
+			);
+			path = HalykProject;
+			sourceTree = "<group>";
+		};
+		AF8B259B2700B364004FB41B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B259F2700C26D004FB41B /* Pokemon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF8B259C2700B36E004FB41B /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				AF74FD33270D8EB700F1F72B /* DataLoader.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		AF8B25A32700D81F004FB41B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AF720B862704C3080057817F /* APIService.swift */,
+				AF8B25A42700D834004FB41B /* PokemonsAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D828C33514217A0FF0A75BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BEB3E1E0BA3E32E8E9A412B /* Pods-HalykProject.debug.xcconfig */,
+				54D3C0E360A8EADD2CF017C4 /* Pods-HalykProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF8B25812700B13B004FB41B /* HalykProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8B25962700B13F004FB41B /* Build configuration list for PBXNativeTarget "HalykProject" */;
+			buildPhases = (
+				024B3402DB2E6E800F9372DF /* [CP] Check Pods Manifest.lock */,
+				AF8B257E2700B13B004FB41B /* Sources */,
+				AF8B257F2700B13B004FB41B /* Frameworks */,
+				AF8B25802700B13B004FB41B /* Resources */,
+				F698EB6E91D1B02342FEEAAE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HalykProject;
+			productName = HalykProject;
+			productReference = AF8B25822700B13B004FB41B /* HalykProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF8B257A2700B13B004FB41B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AF8B25812700B13B004FB41B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = AF8B257D2700B13B004FB41B /* Build configuration list for PBXProject "HalykProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF8B25792700B13B004FB41B;
+			productRefGroup = AF8B25832700B13B004FB41B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF8B25812700B13B004FB41B /* HalykProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF8B25802700B13B004FB41B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8B25922700B13F004FB41B /* LaunchScreen.storyboard in Resources */,
+				AF57255E2701DC74004EF64F /* pokemon.json in Resources */,
+				AF8B258F2700B13F004FB41B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		024B3402DB2E6E800F9372DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HalykProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F698EB6E91D1B02342FEEAAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HalykProject/Pods-HalykProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HalykProject/Pods-HalykProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HalykProject/Pods-HalykProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF8B257E2700B13B004FB41B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF8B25A02700C26D004FB41B /* Pokemon.swift in Sources */,
+				AF8B258A2700B13B004FB41B /* PokemonViewController.swift in Sources */,
+				AF74FD3D270DB69100F1F72B /* SecondCoordinator.swift in Sources */,
+				AF74FD34270D8EB700F1F72B /* DataLoader.swift in Sources */,
+				AF145A552705B56300344B8B /* Coordinator.swift in Sources */,
+				AF74FD3B270DB00000F1F72B /* FirstCoordinator.swift in Sources */,
+				AF8B25862700B13B004FB41B /* AppDelegate.swift in Sources */,
+				AF8B25A52700D834004FB41B /* PokemonsAPI.swift in Sources */,
+				AFFB3AD4270322D00091D81D /* PokemonViewModel.swift in Sources */,
+				AF74FD3F270E987900F1F72B /* DetailViewModel.swift in Sources */,
+				AF8B25A22700C311004FB41B /* PokemonTableViewCell.swift in Sources */,
+				AF720B872704C3080057817F /* APIService.swift in Sources */,
+				AF8B259E2700B3A1004FB41B /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF8B25902700B13F004FB41B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF8B25912700B13F004FB41B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF8B25942700B13F004FB41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF8B25952700B13F004FB41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF8B25972700B13F004FB41B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEB3E1E0BA3E32E8E9A412B /* Pods-HalykProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HalykProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratYeldos.HalykProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF8B25982700B13F004FB41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D3C0E360A8EADD2CF017C4 /* Pods-HalykProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HalykProject/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MaratYeldos.HalykProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF8B257D2700B13B004FB41B /* Build configuration list for PBXProject "HalykProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8B25942700B13F004FB41B /* Debug */,
+				AF8B25952700B13F004FB41B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8B25962700B13F004FB41B /* Build configuration list for PBXNativeTarget "HalykProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF8B25972700B13F004FB41B /* Debug */,
+				AF8B25982700B13F004FB41B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF8B257A2700B13B004FB41B /* Project object */;
+}
